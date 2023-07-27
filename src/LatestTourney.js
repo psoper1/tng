@@ -1,10 +1,11 @@
+import ImageText from "./ImageText";
 import Nav from "./Nav";
 
 
 function LatestTourney() {
     return (
         <>
-        <h1 className='title text-center'>True Nature Gaming</h1>
+        <ImageText />
         <Nav />
         </>
     )
