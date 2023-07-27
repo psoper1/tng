@@ -1,11 +1,12 @@
 import ImageText from "./ImageText";
 import Nav from "./Nav";
 
-function Home() {
+function Home({activeLink, setActiveLink}) {
+
     return (
         <>
-            <ImageText />
-            <Nav />
+            <ImageText activeLink={activeLink} setActiveLink={setActiveLink} />
+            <Nav activeLink={activeLink} setActiveLink={setActiveLink} />
         </>
     );
 }

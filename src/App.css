@@ -55,3 +55,21 @@ body {
 }
 
 /* ----------------------------------------------- */
+
+.card-body {
+  box-shadow: 1px 1px;
+}
+
+.formbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsubmit {
+  background-color: #451e53 !important;
+  border: none !important;
+}
+
+.buttonsubmit:hover {
+  background-color: #1a0920 !important;
+}

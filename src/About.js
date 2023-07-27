@@ -1,8 +1,7 @@
 import ImageText from "./ImageText";
 import Nav from "./Nav";
 
-
-function LatestTourney({activeLink, setActiveLink}) {
+function About({activeLink, setActiveLink}) {
     return (
         <>
         <ImageText activeLink={activeLink} setActiveLink={setActiveLink} />
@@ -11,4 +10,4 @@ function LatestTourney({activeLink, setActiveLink}) {
     )
 }
 
-export default LatestTourney;
+export default About;
