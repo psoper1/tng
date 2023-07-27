@@ -5,3 +5,12 @@
 .tng-image {
   max-width: 100%;
 }
+
+body {
+  background-color: #1a0920 !important;
+}
+
+.custom-navbar {
+  background-color: #451e53 !important;
+  justify-content: center;
+}
