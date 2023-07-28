@@ -4,8 +4,8 @@ import Nav from "./Nav";
 import Question from "./Question";
 import InputField from "./InputField";
 
-function SignUp() {
-    const [activeLink, setActiveLink] = useState("");
+function SignUp( {activeLink, setActiveLink}) {
+
     const [selectedOption, setSelectedOption] = useState("");
     const [teamName, setTeamName] = useState("");
     const [teamMembers, setTeamMembers] = useState("");

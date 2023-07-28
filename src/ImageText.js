@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import tngImage from './imgs/tng-image.jpg';
 
 function ImageText({ activeLink }) {
-  useEffect(() => {
-    // This will log whenever the activeLink prop changes
-    console.log("activeLink changed:", activeLink);
-  }, [activeLink]);
+  // useEffect(() => {
+  //   // This will log whenever the activeLink prop changes
+  //   console.log("activeLink changed:", activeLink);
+  // }, [activeLink]);
 
   return (
     <>
@@ -17,14 +17,14 @@ function ImageText({ activeLink }) {
             <h1>True Nature Gaming</h1>
           </div>
         }
-        {activeLink === 'signup' &&
-          <div className="image-text-content">
-            <h1>Sign Up for a Tournament!</h1>
-          </div>
-        }
         {activeLink === 'latest tourney' &&
           <div className="image-text-content">
             <h1>Latest Tourney!</h1>
+          </div>
+        }
+        {activeLink === 'signup' &&
+          <div className="image-text-content">
+            <h1>Sign Up for a Tournament!</h1>
           </div>
         }
         {activeLink === 'about' &&

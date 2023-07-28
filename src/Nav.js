@@ -22,8 +22,7 @@ function Nav({ setActiveLink }) {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  activeClassName="active"
-                  exact
+                  activeclassname="active"
                   to="/"
                   onClick={() => setActiveLink("home")}
                 >
@@ -33,7 +32,7 @@ function Nav({ setActiveLink }) {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/latest-tourney"
                   onClick={() => setActiveLink("latest tourney")}
                 >
@@ -43,7 +42,7 @@ function Nav({ setActiveLink }) {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/signup"
                   onClick={() => setActiveLink("signup")}
                 >
@@ -53,7 +52,7 @@ function Nav({ setActiveLink }) {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/about"
                   onClick={() => setActiveLink("about")}
                 >
