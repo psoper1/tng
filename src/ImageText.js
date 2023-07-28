@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import tngImage from './imgs/tng-image.jpg';
 
 function ImageText({ activeLink }) {
-  // useEffect(() => {
-  //   // This will log whenever the activeLink prop changes
-  //   console.log("activeLink changed:", activeLink);
-  // }, [activeLink]);
 
   return (
     <>
