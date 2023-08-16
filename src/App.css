@@ -2,6 +2,10 @@ body {
   background-color: #1a0920 !important;
 }
 
+.listitem {
+  list-style-type: none;
+}
+
 /*--------- NAVBAR --------- */
 
 .navbar-nav .nav-link {
