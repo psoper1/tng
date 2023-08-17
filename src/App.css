@@ -6,6 +6,11 @@ body {
   list-style-type: none;
 }
 
+.form-check-input[type=radio] {
+  border-color: black;
+}
+
+
 /*--------- NAVBAR --------- */
 
 .navbar-nav .nav-link {

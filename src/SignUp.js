@@ -4,11 +4,23 @@ import Nav from "./Nav";
 import Question from "./Question";
 import InputField from "./InputField";
 
-function SignUp( {activeLink, setActiveLink}) {
+function SignUp({ activeLink, setActiveLink }) {
 
     const [selectedOption, setSelectedOption] = useState("");
     const [teamName, setTeamName] = useState("");
     const [teamMembers, setTeamMembers] = useState("");
+
+    const handleSubmit = () => {
+        if (selectedOption === 'Free Agent') {
+            console.log('Summoner: ', teamName)
+        } else if (selectedOption === 'Creating a Team') {
+            console.log('Team: ', teamName)
+            console.log('Summoners: ', teamMembers)
+        }
+        console.log('Form Submitted')
+    }
+
+    const isSubmitDisabled = teamName.trim() === "";
 
     return (
         <>
@@ -20,7 +32,7 @@ function SignUp( {activeLink, setActiveLink}) {
                         <div className="card">
                             <div className="card-body">
                                 <h3 className="card-title text-center">Tournament Sign Up Form</h3>
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <Question
                                             question="Are you a Free Agent or Creating a Team?"
@@ -29,13 +41,11 @@ function SignUp( {activeLink, setActiveLink}) {
                                             onSelectOption={setSelectedOption}
                                         />
                                     </div>
-
                                     {selectedOption === "Free Agent" && (
                                         <div className="form-group">
                                             <InputField label="What is your Summoner Name?" value={teamName} onChange={(e) => setTeamName(e.target.value)} />
                                         </div>
                                     )}
-
                                     {selectedOption === "Creating a Team" && (
                                         <>
                                             <div className="form-group">
@@ -56,11 +66,12 @@ function SignUp( {activeLink, setActiveLink}) {
                                             </div>
                                         </>
                                     )}
-
+                                    {selectedOption != '' &&
+                                        <div className="formbutton">
+                                            <button className="buttonsubmit btn btn-primary btn-block mt-3" type="submit" disabled={isSubmitDisabled}>Submit</button>
+                                        </div>
+                                    }
                                 </form>
-                                <div className="formbutton">
-                                    <button className="buttonsubmit btn btn-primary btn-block mt-3" type="submit">Submit</button>
-                                </div>
                             </div>
                         </div>
                     </div>
