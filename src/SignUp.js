@@ -31,7 +31,7 @@ function SignUp({ activeLink, setActiveLink }) {
                     <div className="col-md-6">
                         <div className="card">
                             <div className="card-body">
-                                <h3 className="card-title text-center">Tournament Sign Up Form</h3>
+                                <h3 className="card-title text-center"><u>Tournament Sign Up Form</u></h3>
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <Question
